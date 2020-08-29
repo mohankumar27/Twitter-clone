@@ -1,0 +1,26 @@
+.feed {
+  flex: 0.4;
+  border: 1px solid var(--twitter-background);
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+/* Hides the scrollbar in chrome*/
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar in IE Edge and Firefox */
+.feed {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.feed__header {
+  /* position: fixed; */
+  top: 0;
+  background-color: white;
+  z-index: 100; /* show this on top (value can be any number)*/
+  border: 1px solid var(--twitter-background);
+  padding: 15px 20px;
+}
